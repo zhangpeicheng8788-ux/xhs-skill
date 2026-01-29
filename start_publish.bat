@@ -1,7 +1,14 @@
 @echo off
-REM Auto-Redbook Skill V6.6 - Batch Publish Tool Launcher
-REM Start the GUI tool for batch publishing Xiaohongshu notes
+chcp 65001 >nul
+title XHS Batch Publish GUI V3.0
 
-cd /d "%~dp0"
-C:\Python314\python.exe scripts\publish_gui.py --notes-dir "%~dp0" --start-from 1 --wait-minutes 10
-pause
+echo Starting XHS Batch Publish GUI V3.0...
+echo.
+
+C:\Python314\python.exe D:\20260127XHS\Auto-Redbook-Skills-main\scripts\publish_gui_v3.py
+
+if errorlevel 1 (
+    echo.
+    echo Error occurred!
+    pause
+)
