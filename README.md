@@ -1,3 +1,5 @@
+
+
 # Auto-Redbook Skill V6.6
 
 > 小红书笔记素材创作与批量发布工具
@@ -29,7 +31,8 @@ Auto-Redbook Skill 是一个专业的小红书笔记创作与发布工具，支�
 ```
 
 ### 2. 配置 Cookie
-创建 `.env` 文件，添加：
+推荐使用 `fix_cookie.bat` 自动获取并保存 Cookie（详见 [3步快速开始.md](3步快速开始.md)）。
+若需手动配置，请创建 `.env` 文件，添加：
 ```
 XHS_COOKIE=你的Cookie字符串
 ```
